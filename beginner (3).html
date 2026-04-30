@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indicaciones Evento Final — Final Regional Beginner Jalisco 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --naranja:   #F5A623;
+    --naranja-dark: #E8920A;
+    --rosa:      #E8197A;
+    --morado:    #7B2D8B;
+    --azul:      #2E86C1;
+    --teal:      #1ABC9C;
+    --blanco:    #FFFFFF;
+    --gris-claro:#FDF6EC;
+    --gris-medio:#F0E6D3;
+    --texto:     #2C1810;
+    --texto-suave:#6B4C3B;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--gris-claro);
+    color: var(--texto);
+    line-height: 1.6;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, var(--naranja) 0%, var(--naranja-dark) 60%, #D4780A 100%);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 300px; height: 300px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 50%;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: 10%;
+    width: 200px; height: 200px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+  }
+  .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 32px 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .logos {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .logo-badge {
+    background: white;
+    border-radius: 12px;
+    padding: 8px 16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    color: var(--morado);
+    letter-spacing: 0.5px;
+  }
+  .logo-badge.tg { color: var(--teal); }
+  .header h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 2.6rem;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .header h1 span { color: var(--rosa); display: block; }
+  .event-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .meta-pill {
+    background: rgba(255,255,255,0.22);
+    backdrop-filter: blur(4px);
+    border: 1.5px solid rgba(255,255,255,0.35);
+    border-radius: 999px;
+    padding: 6px 16px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.92rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+  }
+
+  /* ALERTA */
+  .alert-banner {
+    background: var(--rosa);
+    color: white;
+    text-align: center;
+    padding: 14px 24px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  /* MAIN */
+  .main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+  }
+
+  /* WELCOME */
+  .welcome-card {
+    background: white;
+    border-radius: 20px;
+    padding: 32px 36px;
+    margin: 32px 0 24px;
+    border-left: 6px solid var(--naranja);
+    box-shadow: 0 4px 20px rgba(245,166,35,0.12);
+  }
+  .welcome-card p { font-size: 1.05rem; color: var(--texto-suave); line-height: 1.75; }
+  .welcome-card strong { color: var(--texto); }
+
+  /* FECHAS LÍMITE */
+  .deadlines {
+    background: linear-gradient(135deg, var(--morado), #9B3DB8);
+    border-radius: 20px;
+    padding: 28px 32px;
+    margin: 24px 0;
+    color: white;
+  }
+  .deadlines h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .deadline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .deadline-item {
+    background: rgba(255,255,255,0.15);
+    border: 1.5px solid rgba(255,255,255,0.25);
+    border-radius: 14px;
+    padding: 16px 18px;
+  }
+  .deadline-date { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--naranja); margin-bottom: 4px; }
+  .deadline-label { font-size: 0.9rem; font-weight: 600; line-height: 1.4; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--texto);
+    margin: 36px 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--naranja);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* CHECKLIST */
+  .checklist-card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 32px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+  .audience-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 2px dashed var(--gris-medio);
+  }
+  .audience-icon {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+  .audience-icon.rosa { background: #FDE8F2; }
+  .audience-icon.teal { background: #E0FAF5; }
+  .audience-icon.azul { background: #E3F0FB; }
+  .audience-title { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.15rem; }
+  .checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #F5EDE0;
+  }
+  .checklist-item:last-child { border-bottom: none; }
+  .check-box {
+    width: 22px; height: 22px;
+    border: 2.5px solid var(--gris-medio);
+    border-radius: 6px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    background: white;
+  }
+  .check-text { font-size: 0.97rem; line-height: 1.5; }
+  .check-text strong { color: var(--texto); }
+  .tag {
+    display: inline-block;
+    background: #FDE8F2;
+    color: var(--rosa);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 1px 8px;
+    border-radius: 999px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .tag.info { background: #E3F0FB; color: var(--azul); }
+
+  /* PRESENTACION */
+  .present-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 4px;
+  }
+  @media (max-width: 600px) { .present-grid { grid-template-columns: 1fr; } }
+  .present-card {
+    background: white;
+    border-radius: 20px;
+    padding: 24px 26px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+  .present-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .present-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .present-card li {
+    font-size: 0.93rem;
+    padding-left: 22px;
+    position: relative;
+    line-height: 1.5;
+    color: var(--texto-suave);
+  }
+  .present-card li::before { content: '→'; position: absolute; left: 0; color: var(--naranja); font-weight: 700; }
+  .nota {
+    background: #FFF8E7;
+    border: 1.5px solid var(--naranja);
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.88rem;
+    color: var(--texto-suave);
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  /* TIMELINE */
+  .timeline { display: flex; flex-direction: column; gap: 0; }
+  .timeline-item { display: flex; gap: 0; position: relative; }
+  .timeline-time {
+    width: 90px; flex-shrink: 0;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800; font-size: 0.95rem;
+    color: var(--morado);
+    padding: 16px 16px 16px 0;
+    text-align: right;
+  }
+  .timeline-dot-col { width: 32px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; }
+  .timeline-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--naranja); margin-top: 20px; flex-shrink: 0; position: relative; z-index: 1; }
+  .timeline-line { width: 2px; background: var(--gris-medio); flex: 1; }
+  .timeline-content { flex: 1; padding: 12px 0 12px 12px; }
+  .timeline-activity { font-weight: 800; font-family: 'Outfit', sans-serif; font-size: 1rem; color: var(--texto); }
+  .timeline-place { font-size: 0.88rem; color: var(--texto-suave); margin-top: 2px; }
+
+  /* EQUIPOS */
+  .equipos-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    margin-top: 4px;
+  }
+
+  /* INGRESO */
+  .ingreso-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 4px; }
+  @media (max-width: 600px) { .ingreso-grid { grid-template-columns: 1fr; } }
+  .ingreso-card { background: white; border-radius: 20px; padding: 24px 26px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+  .ingreso-card h3 { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1rem; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .ingreso-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .ingreso-card li { font-size: 0.93rem; padding-left: 22px; position: relative; line-height: 1.5; color: var(--texto-suave); }
+  .ingreso-card li::before { content: '✓'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+
+  /* CONSEJOS */
+  .consejos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 4px; }
+  .consejo-card { background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; }
+  .consejo-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+  .consejo-card p { font-size: 0.9rem; color: var(--texto-suave); line-height: 1.5; }
+
+  /* CONTACTOS */
+  .contactos-table { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06); margin-top: 4px; }
+  .contactos-row { display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 14px 24px; border-bottom: 1px solid #F5EDE0; align-items: center; gap: 12px; font-size: 0.93rem; }
+  .contactos-row:last-child { border-bottom: none; }
+  .contactos-row.header { background: var(--naranja); color: white; font-family: 'Outfit', sans-serif; font-weight: 700; }
+  .contactos-row a { color: var(--rosa); font-weight: 700; text-decoration: none; }
+  @media (max-width: 600px) { .contactos-row { grid-template-columns: 1fr; gap: 4px; padding: 16px 20px; } .contactos-row.header { display: none; } }
+
+  /* CHECKLIST FINAL */
+  .checklist-final { background: linear-gradient(135deg, var(--naranja), var(--naranja-dark)); border-radius: 20px; padding: 32px 36px; margin-top: 24px; color: white; }
+  .checklist-final h2 { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .final-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .final-item { background: rgba(255,255,255,0.18); border: 1.5px solid rgba(255,255,255,0.3); border-radius: 12px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; font-weight: 600; line-height: 1.4; }
+  .final-check { width: 20px; height: 20px; border: 2.5px solid rgba(255,255,255,0.7); border-radius: 5px; flex-shrink: 0; margin-top: 1px; background: rgba(255,255,255,0.1); }
+
+  /* FOOTER */
+  .footer { background: var(--morado); color: white; text-align: center; padding: 28px 24px; font-size: 0.9rem; line-height: 1.7; }
+  .footer a { color: var(--naranja); font-weight: 700; text-decoration: none; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  .animate { animation: fadeUp 0.5s ease both; }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.2s; }
+
+  @media (max-width: 600px) { .header h1 { font-size: 1.9rem; } .deadline-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logos animate">
+      <span class="logo-badge tg">Technovation Girls México</span>
+      <span class="logo-badge">Mentoralia</span>
+    </div>
+    <h1 class="animate delay-1">
+      Indicaciones Evento Final
+      <span>Final Regional Beginner</span>
+      Jalisco 2026
+    </h1>
+    <div class="event-meta animate delay-2">
+      <span class="meta-pill">📅 15 de mayo de 2026</span>
+      <span class="meta-pill">🕑 2:00 pm – 6:30 pm</span>
+      <a href="https://www.google.com/maps/search/HP+Las+Fuentes+Guadalajara" target="_blank" class="meta-pill">📍 HP Las Fuentes Guadalajara →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ALERTA -->
+<div class="alert-banner">
+  ⚠️ Lee este documento completo con tu equipo, mentor/a y familia. Hay acciones que deben completarse <strong>antes del evento</strong>.
+</div>
+
+<main class="main">
+
+  <!-- BIENVENIDA -->
+  <div class="welcome-card animate">
+    <p>
+      ¡Felicidades por llegar hasta aquí! 🎉 Completar tu proyecto es un logro enorme. Estás a un paso de vivir el <strong>Evento Regional Beginner 2026</strong>, donde presentarás tu proyecto frente al jurado que evaluará a tu equipo para la competencia internacional de Technovation Girls.<br><br>
+      Lee con atención las siguientes indicaciones junto con tu equipo, tu mentor/a y tu familia. Cada sección tiene información importante para que el día del evento todo salga perfecto.
+    </p>
+  </div>
+
+  <!-- FECHAS LÍMITE -->
+  <div class="deadlines animate">
+    <h2>⏰ Fechas límite — No te quedes fuera</h2>
+    <div class="deadline-grid">
+      <div class="deadline-item">
+        <div class="deadline-date">11 de mayo</div>
+        <div class="deadline-label">Envía tu presentación de pitch a<br>cynthia@mentoralia.org</div>
+      </div>
+      <div class="deadline-item">
+        <div class="deadline-date">9 de mayo</div>
+        <div class="deadline-label">Registro de adultos y acompañantes en Eventbrite</div>
+        <a href="https://www.eventbrite.com.mx/e/final-regional-beginner-jalisco-2026-tickets-1987951015000?aff=oddtdtcreator" target="_blank" style="display:inline-block; margin-top:10px; background:white; color:var(--morado); font-family:'Outfit',sans-serif; font-weight:700; font-size:0.82rem; padding:6px 14px; border-radius:999px; text-decoration:none;">Registrarme en Eventbrite →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKLIST PARTICIPANTES -->
+  <h2 class="section-title">✅ ¿Qué debes hacer antes del evento?</h2>
+
+  <div class="checklist-card">
+    <div class="audience-header">
+      <div class="audience-icon rosa">👩‍💻</div>
+      <div>
+        <div class="audience-title" style="color:var(--rosa)">Para las participantes</div>
+        <div style="font-size:0.85rem; color:var(--texto-suave)">Revisa y completa cada punto con tu equipo</div>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Envía tu presentación de pitch antes del 11 de mayo</strong> al correo cynthia@mentoralia.org — solo una integrante del equipo necesita enviarla.<br>
+        <strong>Asunto:</strong> Presentación Beginner [Nombre del equipo] Jalisco. <strong>Formato:</strong> PPT, PDF o link público (Google Slides, Canva, Dropbox). <span class="tag">Obligatorio</span><br>
+        <span style="font-size:0.88rem; color:var(--texto-suave);">Una vez recibida correctamente, recibirás un correo de confirmación. ¿Necesitas ayuda para preparar tu presentación? <a href="https://docs.google.com/document/d/1njSeqxoXcXYE2mySN1171qn5Ky8f6VV9m6anbcF6qzM/edit?usp=sharing" target="_blank" style="color:var(--rosa);font-weight:700;">Consulta este material de apoyo →</a></span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Lleva tu presentación en una USB</strong> el día del evento, por si acaso. <span class="tag info">Recomendado</span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Descarga el demo de tu app</strong> en el celular que llevarás al evento (no habrá internet). <span class="tag">Obligatorio</span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Prepara el material de exposición:</strong> solo se permiten trípticos o carteles. Espacio máximo: 120 cm de ancho en escritorio. No hay paredes ni mamparas. No están permitidos banners, souvenirs ni globos. <span class="tag">Obligatorio</span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Practica tu pitch de 4 minutos en español.</strong> Debe incluir: el problema y usuario y cómo funciona la app. <span class="tag">Obligatorio</span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Si cuentas con credencial de tu escuela, llévala.</strong> No es indispensable pero puede ser útil para tu identificación el día del evento. <span class="tag info">Opcional</span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Permiso de uso de imagen</strong> — Si aún no lo han firmado, pide apoyo a tus papás para firmarlo en línea aquí: <a href="https://mentoralia.github.io/autorizacion-medios/" target="_blank" style="color:var(--rosa);font-weight:700;">firmar en línea →</a> Si ya lo firmaron, ¡no necesitas hacer nada más! <span class="tag info">Opcional</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKLIST MENTORES -->
+  <div class="checklist-card">
+    <div class="audience-header">
+      <div class="audience-icon teal">🧑‍🏫</div>
+      <div>
+        <div class="audience-title" style="color:var(--teal)">Para mentores y mentoras</div>
+        <div style="font-size:0.85rem; color:var(--texto-suave)">Tu acompañamiento hace la diferencia</div>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Regístrate en Eventbrite</strong> antes del 9 de mayo. Si necesitas estacionamiento, solicitarlo al registrarte. <a href="https://www.eventbrite.com.mx/e/final-regional-beginner-jalisco-2026-tickets-1987951015000?aff=oddtdtcreator" target="_blank" style="color:var(--rosa);font-weight:700;">Registrarme →</a> <span class="tag">Obligatorio</span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Apoya al equipo con el envío de la presentación</strong> si lo necesitan — puedes enviarla tú en su nombre. <span class="tag info">Apoyo</span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Lleva identificación oficial</strong> el día del evento. <span class="tag">Obligatorio</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKLIST PADRES -->
+  <div class="checklist-card">
+    <div class="audience-header">
+      <div class="audience-icon azul">👨‍👩‍👧</div>
+      <div>
+        <div class="audience-title" style="color:var(--azul)">Para mamás, papás y tutores</div>
+        <div style="font-size:0.85rem; color:var(--texto-suave)">Su apoyo es fundamental para el equipo</div>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Regístrate en Eventbrite</strong> antes del 9 de mayo. Si necesitas estacionamiento, solicitarlo al registrarte.
+        <a href="https://www.eventbrite.com.mx/e/final-regional-beginner-jalisco-2026-tickets-1987951015000?aff=oddtdtcreator" target="_blank" style="color:var(--rosa);font-weight:700;">Registrarme →</a>
+        <span class="tag">Obligatorio</span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Permiso de uso de imagen</strong> — Es un permiso para que tu hija pueda aparecer en fotos y videos del evento que Mentoralia utiliza para promover el programa. Al firmarlo autorizas a Mentoralia A.C. a usar el nombre, imagen, voz y testimonios de tu hija en materiales de promoción de Technovation Girls México, tanto en medios locales como nacionales. Su imagen no será usada para fines comerciales ajenos al programa ni cedida a terceros. Si aún no lo han firmado, pueden hacerlo en línea aquí: <a href="https://mentoralia.github.io/autorizacion-medios/" target="_blank" style="color:var(--rosa);font-weight:700;">firmar en línea →</a> Si ya lo firmaron, no es necesario hacerlo de nuevo. <span class="tag info">Opcional</span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <strong>Lleva identificación oficial</strong> el día del evento. <span class="tag">Obligatorio</span>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="check-box"></div>
+      <div class="check-text">
+        Si tu hija tiene alguna <strong>alergia o restricción alimentaria</strong>, te pedimos con cariño que le prepares su lunch ese día, ya que el lunch del evento puede ser sándwich o pizza y en HP no contamos con venta de alimentos. ¡Queremos que todas disfruten el evento sin preocupaciones! <span class="tag info">Informativo</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CÓMO PRESENTAR -->
+  <h2 class="section-title">🎤 Cómo presentar tu proyecto</h2>
+  <div class="present-grid">
+    <div class="present-card">
+      <h3><span style="font-size:1.3rem">🖼️</span> <span style="color:var(--rosa)">La Expo</span></h3>
+      <p style="font-size:0.93rem; color:var(--texto-suave); margin-bottom:14px; line-height:1.6;">Durante la expo tu equipo tendrá un espacio en una mesa donde colocarán su material — un cartel o tríptico con información de su proyecto. La gente (incluyendo los jurados) se acercará a su mesa, ustedes les explicarán su proyecto y les mostrarán cómo funciona su app en el celular. ¡Es su momento de brillar y de responder preguntas!</p>
+      <ul>
+        <li>Espacio de hasta <strong>120 cm de ancho</strong> en escritorio</li>
+        <li>Solo se permiten trípticos o carteles (sin proyector)</li>
+        <li>Celular con el demo de tu app descargado</li>
+        <li>No hay internet ni electricidad — lleva batería portátil</li>
+        <li>No hay paredes ni mamparas para pegar carteles</li>
+        <li>⚠️ No están permitidos banners, souvenirs ni globos (por practicidad en el desmontaje)</li>
+      </ul>
+      <div class="nota">💡 No necesitas gastar mucho — recuerda reciclar, reusar y reducir.</div>
+      <div class="nota" style="background:#FDE8F2; border-color:var(--rosa); margin-top:8px;">🎨 <strong>¡Los carteles pueden ser tan creativos y decorados como quieran!</strong> Pueden usar colores, ilustraciones, fotos impresas, recortes — lo que refleje mejor la identidad de su proyecto. Aquí un ejemplo de cómo puede verse:</div>
+      <div style="margin-top:12px; border-radius:12px; overflow:hidden;">
+        <img src="expo-referencia.png" alt="Ejemplo de cartel de exposición" style="width:100%; display:block; border-radius:12px;">
+      </div>
+    </div>
+    <div class="present-card">
+      <h3><span style="font-size:1.3rem">🎯</span> <span style="color:var(--morado)">El Pitch</span></h3>
+      <p style="font-size:0.93rem; color:var(--texto-suave); margin-bottom:14px; line-height:1.6;">El pitch es la presentación de tu proyecto frente a un público y un jurado, igual que lo hicieron en su video pero en vivo. Se apoyarán de la presentación que enviaron por correo y tendrán máximo <strong>4 minutos</strong>. Pueden hacer modificaciones a su pitch del video, lo importante es que no cambie la esencia de su proyecto.</p>
+      <ul>
+        <li><strong>Máximo 4 minutos</strong> en español</li>
+        <li>Alguien te indicará el tiempo con carteles</li>
+        <li>Se recomienda que todas las participantes hablen aunque no es obligatorio</li>
+        <li>Incluye: problema + usuario y cómo funciona la app</li>
+        <li>Apóyate en la presentación que enviaste por correo</li>
+      </ul>
+      <div class="nota">💡 Puedes usar capturas de pantalla de tu app en la presentación.</div>
+      <div class="nota" style="background:#E3F0FB; border-color:var(--azul); margin-top:8px;">📄 <strong>¿Necesitas ayuda para preparar tu pitch?</strong> <a href="https://docs.google.com/document/d/1njSeqxoXcXYE2mySN1171qn5Ky8f6VV9m6anbcF6qzM/edit?usp=sharing" target="_blank" style="color:var(--azul);font-weight:700;">Consulta este material de apoyo →</a></div>
+      <div class="nota" style="background:#FDE8F2; border-color:var(--rosa); margin-top:8px;">🌟 <strong>¡Ensayen su pitch en equipo antes del evento!</strong> Practicarlo en voz alta marca una gran diferencia. Recuerden que llegaron hasta aquí porque su proyecto lo merece — respiren profundo, confíen en su trabajo y disfruten el momento. ¡Ustedes pueden!</div>
+    </div>
+  </div>
+
+  <!-- ORDEN DEL DÍA -->
+  <h2 class="section-title">📅 Orden del día</h2>
+  <div style="background:white; border-radius:20px; padding:28px 32px; box-shadow:0 4px 16px rgba(0,0,0,0.06);">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">2:00 PM</div>
+        <div class="timeline-dot-col"><div class="timeline-dot" style="background:var(--rosa)"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content"><div class="timeline-activity">Registro y montaje</div><div class="timeline-place">📍 Cafetería</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">2:30 PM</div>
+        <div class="timeline-dot-col"><div class="timeline-dot" style="background:var(--naranja)"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content"><div class="timeline-activity">Inauguración</div><div class="timeline-place">📍 Cafetería</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">2:55 PM</div>
+        <div class="timeline-dot-col"><div class="timeline-dot" style="background:var(--morado)"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content"><div class="timeline-activity">Ronda 1 — Exposición y Pitch</div><div class="timeline-place">📍 Cafetería</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">3:50 PM</div>
+        <div class="timeline-dot-col"><div class="timeline-dot" style="background:var(--rosa)"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content"><div class="timeline-activity">Ronda 2 — Exposición y Pitch</div><div class="timeline-place">📍 Cafetería</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">5:00 PM</div>
+        <div class="timeline-dot-col"><div class="timeline-dot" style="background:var(--teal)"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content"><div class="timeline-activity">Break comida</div><div class="timeline-place">📍 Cafetería</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">5:20 PM</div>
+        <div class="timeline-dot-col"><div class="timeline-dot" style="background:var(--azul)"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content"><div class="timeline-activity">Cierre de evaluaciones y selección de representantes</div><div class="timeline-place">📍 Sala de jurado</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">5:20 PM</div>
+        <div class="timeline-dot-col"><div class="timeline-dot" style="background:var(--naranja)"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content"><div class="timeline-activity">Speakers HP y embajadora estudiantil · Foto</div><div class="timeline-place">📍 Cafetería</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">5:55 PM</div>
+        <div class="timeline-dot-col"><div class="timeline-dot" style="background:var(--rosa)"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content"><div class="timeline-activity">Premiación</div><div class="timeline-place">📍 Cafetería</div></div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">6:25 PM</div>
+        <div class="timeline-dot-col"><div class="timeline-dot" style="background:var(--morado)"></div><div class="timeline-line"></div></div>
+        <div class="timeline-content"><div class="timeline-activity">Salida</div><div class="timeline-place">📍 Cafetería</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GRUPO DE PITCH -->
+  <h2 class="section-title">🏫 Tu grupo de pitch</h2>
+  <p style="color:var(--texto-suave); font-size:0.97rem; margin-bottom:20px;">Todos los equipos participan en el mismo grupo.</p>
+
+  <!-- EQUIPOS -->
+  <div style="background:white; border-radius:20px; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,0.07); max-width:400px;">
+    <div style="background:var(--rosa); padding:14px 20px;">
+      <div style="font-size:0.75rem; color:rgba(255,255,255,0.8); font-weight:700; letter-spacing:1px; text-transform:uppercase;">Beginner</div>
+      <div style="font-family:'Outfit',sans-serif; font-weight:800; font-size:1.4rem; color:white;">Grupo Único</div>
+    </div>
+    <ul style="list-style:none; padding:12px 20px 16px;">
+      <li style="padding:7px 0; border-bottom:1px solid var(--gris-medio); font-size:0.93rem; color:var(--texto);">baby power</li>
+      <li style="padding:7px 0; border-bottom:1px solid var(--gris-medio); font-size:0.93rem; color:var(--texto);">conexión única</li>
+      <li style="padding:7px 0; border-bottom:1px solid var(--gris-medio); font-size:0.93rem; color:var(--texto);">DinoGirls</li>
+      <li style="padding:7px 0; border-bottom:1px solid var(--gris-medio); font-size:0.93rem; color:var(--texto);">Hidro-amigos</li>
+      <li style="padding:7px 0; border-bottom:1px solid var(--gris-medio); font-size:0.93rem; color:var(--texto);">las estrellas fugazes</li>
+      <li style="padding:7px 0; border-bottom:1px solid var(--gris-medio); font-size:0.93rem; color:var(--texto);">NKTesla Girls</li>
+      <li style="padding:7px 0; border-bottom:1px solid var(--gris-medio); font-size:0.93rem; color:var(--texto);">Road Runners</li>
+      <li style="padding:7px 0; border-bottom:1px solid var(--gris-medio); font-size:0.93rem; color:var(--texto);">snoopy girls</li>
+      <li style="padding:7px 0; font-size:0.93rem; color:var(--texto);">Team lovefries</li>
+    </ul>
+  </div>
+
+  <!-- INDICACIONES DE INGRESO -->
+  <h2 class="section-title">🚪 Indicaciones de ingreso</h2>
+  <div class="ingreso-grid">
+    <div class="ingreso-card">
+      <h3 style="color:var(--rosa)">👩‍💻 Participantes</h3>
+      <ul>
+        <li>Anticipa tu llegada para evitar contratiempos</li>
+        <li>Al llegar, espera en el lobby a que un voluntario te dé indicaciones</li>
+        <li>Llega puntual a las 2:00 PM para registro y montaje</li>
+        <li>Un voluntario te guiará a tu espacio asignado</li>
+      </ul>
+    </div>
+    <div class="ingreso-card">
+      <h3 style="color:var(--azul)">👨‍👩‍👧 Adultos y acompañantes</h3>
+      <ul>
+        <li>Lleva identificación oficial</li>
+        <li>Regístrate en <a href="https://www.eventbrite.com.mx/e/final-regional-beginner-jalisco-2026-tickets-1987951015000?aff=oddtdtcreator" target="_blank" style="color:var(--rosa);font-weight:700;">Eventbrite</a> antes del 9 de mayo</li>
+        <li>Si necesitas estacionamiento, solicítalo al registrarte en Eventbrite — en la caseta de entrada te indicarán tu lugar asignado</li>
+        <li>Al llegar, espera en el lobby a que un voluntario te dé indicaciones</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONSEJOS -->
+  <h2 class="section-title">💡 Consejos adicionales</h2>
+  <div class="consejos-grid">
+    <div class="consejo-card">
+      <span class="consejo-icon">🔋</span>
+      <p><strong>Sin electricidad ni internet.</strong> Lleva dispositivos cargados o batería portátil.</p>
+    </div>
+    <div class="consejo-card">
+      <span class="consejo-icon">👗</span>
+      <p><strong>Sin dress code.</strong> Viste lo que te haga sentir cómoda y refleje tu proyecto.</p>
+    </div>
+    <div class="consejo-card">
+      <span class="consejo-icon">🥪</span>
+      <p><strong>Lunch incluido</strong> para participantes y voluntarios. Puede ser sándwich o pizza. Si tu hija tiene alguna alergia o restricción alimentaria, te pedimos con cariño que le prepares su lunch — ¡queremos que todas disfruten sin preocupaciones! En HP no contamos con venta de alimentos.</p>
+    </div>
+    <div class="consejo-card">
+      <span class="consejo-icon">💧</span>
+      <p><strong>Trae tu bote de agua reutilizable.</strong> Habrá puntos donde puedes volver a llenarlo durante el evento.</p>
+    </div>
+    <div class="consejo-card">
+      <span class="consejo-icon">♻️</span>
+      <p><strong>Cuida el medio ambiente.</strong> Usa materiales reciclados o reutilizados para tu expo.</p>
+    </div>
+    <div class="consejo-card">
+      <span class="consejo-icon">🤝</span>
+      <p><strong>Sana competencia.</strong> Recuerda el Código de Comportamiento del evento.</p>
+    </div>
+  </div>
+
+  <!-- WHATSAPP -->
+  <h2 class="section-title">💬 Mantente informada</h2>
+  <div style="background:white; border-radius:20px; padding:28px 32px; box-shadow:0 4px 16px rgba(0,0,0,0.06); display:flex; align-items:center; gap:24px; flex-wrap:wrap;">
+    <div style="font-size:3rem; flex-shrink:0;">📲</div>
+    <div style="flex:1; min-width:200px;">
+      <div style="font-family:'Outfit',sans-serif; font-weight:800; font-size:1.1rem; color:var(--texto); margin-bottom:6px;">Únete al grupo de avisos de WhatsApp</div>
+      <p style="font-size:0.95rem; color:var(--texto-suave); margin-bottom:14px;">Este es un canal de <strong>solo lectura</strong> para garantizar que la información de Jalisco esté siempre a la mano y bien organizada.</p>
+      <a href="https://chat.whatsapp.com/GV9MIKBxwbs5JSVANqAvrH" target="_blank" style="display:inline-block; background:#25D366; color:white; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.95rem; padding:10px 22px; border-radius:999px; text-decoration:none;">Unirme al grupo →</a>
+    </div>
+  </div>
+
+  <h2 class="section-title">📬 ¿Tienes dudas? Escríbenos</h2>
+  <div style="background:white; border-radius:20px; padding:28px 32px; box-shadow:0 4px 16px rgba(0,0,0,0.06); display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+    <div style="font-size:2.5rem; flex-shrink:0;">✉️</div>
+    <div>
+      <div style="font-family:'Outfit',sans-serif; font-weight:800; font-size:1.05rem; color:var(--texto); margin-bottom:4px;">Para cualquier duda escríbenos a:</div>
+      <a href="mailto:info@mentoralia.org" style="color:var(--rosa); font-weight:800; font-size:1.1rem; text-decoration:none;">info@mentoralia.org</a>
+      <div style="font-size:0.88rem; color:var(--texto-suave); margin-top:4px;">Con gusto te ayudamos 😊</div>
+    </div>
+  </div>
+
+  <!-- CHECKLIST FINAL -->
+  <div class="checklist-final">
+    <h2>🎒 Lista del día del evento — ¿Ya tienes todo?</h2>
+    <div class="final-items">
+      <div class="final-item"><div class="final-check"></div>Celular con demo de la app descargado</div>
+      <div class="final-item"><div class="final-check"></div>Batería portátil cargada</div>
+      <div class="final-item"><div class="final-check"></div>Material de exposición (trípticos o carteles)</div>
+      <div class="final-item"><div class="final-check"></div>Presentación enviada antes del 11 de mayo</div>
+      <div class="final-item"><div class="final-check"></div>Bote de agua reutilizable</div>
+      <div class="final-item"><div class="final-check"></div>Presentación guardada en USB</div>
+      <div class="final-item"><div class="final-check"></div>Adultos registrados en <a href="https://www.eventbrite.com.mx/e/final-regional-beginner-jalisco-2026-tickets-1987951015000?aff=oddtdtcreator" target="_blank" style="color:var(--texto);font-weight:700;text-decoration:underline;">Eventbrite</a></div>
+      <div class="final-item"><div class="final-check"></div>Identificación oficial (adultos)</div>
+      <div class="final-item"><div class="final-check"></div>Permiso de imagen firmado en línea (si aplica)</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <strong>¿Dudas de última hora?</strong> Escríbenos a <a href="mailto:info@mentoralia.org">info@mentoralia.org</a><br>
+  <span style="opacity:0.8; font-size:0.85rem;">Technovation Girls México · Mentoralia · Final Regional Beginner Jalisco 2026</span>
+</footer>
+
+
+
+</body>
+</html>
